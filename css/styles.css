@@ -399,9 +399,19 @@ media screen and (min-resolution: 192dpi) {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
-.benefits {
+.benefits-list-item {
+  min-width: 288px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px);
+ {
+  .benefits-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .benefits-list-item {
+    max-width: 356px;
+  }
 }
