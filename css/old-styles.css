@@ -147,8 +147,7 @@ body {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
-  max-width: 496px;
-  align-content: center;
+  min-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
