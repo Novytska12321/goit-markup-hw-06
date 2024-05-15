@@ -407,11 +407,10 @@ media screen and (min-resolution: 192dpi) {
  {
   .benefits-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
   .benefits-list-item {
-    max-width: 356px;
+    width: calc((100% - 24px) / 2);
   }
 }
