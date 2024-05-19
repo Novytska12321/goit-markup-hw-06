@@ -847,6 +847,15 @@ media screen and (min-resolution: 192dpi) {
   .footer-main-container {
     padding: 0 15px;
   }
+  .footer-logo-cont {
+    margin-right: 120px;
+  }
+  .footer-subscribe-wrapper {
+    margin-left: auto;
+  }
+  .footer-subscribe-button {
+    border: none;
+  }
 }
 
 /* =======Backdrop======= */
