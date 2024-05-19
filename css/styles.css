@@ -880,9 +880,9 @@ media screen and (min-resolution: 192dpi) {
 }
 .modal {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   width: 288px;
   height: 623px;
