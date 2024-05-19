@@ -55,16 +55,13 @@ body {
 }
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 /* =========HEADER============ */
-.page-header {
-  padding-top: 17.5px;
-  padding-bottom: 17.5px;
-}
+
 .navigation-list {
   display: none;
 }
@@ -74,6 +71,7 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .page-logo {
   font-weight: 700;
@@ -235,7 +233,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -18px;
+    bottom: -1px;
     background: #404bbf;
     border-radius: 2px;
     height: 4px;
@@ -261,8 +259,7 @@ body {
   .address-list {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    font-style: normal;
   }
   .navigation-list-link {
     padding-top: 24px;
@@ -295,6 +292,7 @@ media screen and (min-resolution: 192dpi) {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-img/Dark-mobile-bg@2x-min.jpg);
+    padding: 188px 0;
   }
 }
 .main-title {
@@ -306,13 +304,7 @@ media screen and (min-resolution: 192dpi) {
   margin-bottom: 72px;
   min-width: 216px;
 }
-.hero-container {
-  padding-top: 72px;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-bottom: 72px;
-  margin: 0 auto;
-}
+
 .button-top {
   border-radius: 4px;
   padding: 16px 32px;
@@ -329,6 +321,7 @@ media screen and (min-resolution: 192dpi) {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -338,7 +331,6 @@ media screen and (min-resolution: 192dpi) {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-img/Dark-tablet-bg-min.jpg);
-    min-width: 768px;
   }
   .main-title {
     font-size: 56px;
@@ -349,8 +341,7 @@ media screen and (min-resolution: 192dpi) {
     margin-bottom: 36px;
   }
   .hero-container {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding: 188px 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -360,7 +351,8 @@ media screen and (min-resolution: 192dpi) {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-img/people-office\ 1-min.jpg);
-    min-width: 1158px;
+    min-width: 1440px;
+
     background-size: cover;
   }
   .main-title {
@@ -377,6 +369,9 @@ media screen and (min-resolution: 192dpi) {
   }
 }
 /* =======BENEFITS========= */
+.benefits-container {
+  padding: 120px 0;
+}
 .benefits-icons {
   display: none;
 }
@@ -386,8 +381,6 @@ media screen and (min-resolution: 192dpi) {
   justify-content: flex-start;
   flex-direction: column;
   gap: 72px;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 .benefits-list-title {
   font-size: 36px;
@@ -403,9 +396,6 @@ media screen and (min-resolution: 192dpi) {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-.benefits-list-item {
-  min-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
@@ -456,6 +446,9 @@ media screen and (min-resolution: 192dpi) {
     letter-spacing: 0.02em;
     width: 264px;
   }
+  .benefits-list-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 /* =======OUR TEAM======= */
@@ -467,10 +460,7 @@ media screen and (min-resolution: 192dpi) {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.team-container {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+
 .team-list {
   display: flex;
   flex-direction: column;
@@ -541,6 +531,7 @@ media screen and (min-resolution: 192dpi) {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
+    margin: 0;
   }
   .team-item {
     display: block;
@@ -619,7 +610,6 @@ media screen and (min-resolution: 192dpi) {
   color: #434455;
 }
 .name-app-container {
-  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
   position: relative;
