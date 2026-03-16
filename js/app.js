@@ -36,3 +36,10 @@ openMenuBtn.addEventListener('click', () => {
 closeMenuBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('is-open');
 });
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-list-link');
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+  });
+});
