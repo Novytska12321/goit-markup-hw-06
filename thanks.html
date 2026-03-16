@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You — WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --brand: #4d5ae5;
+            --brand-dark: #404bbf;
+            --navy: #2e2f42;
+            --text: #434455;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            color: var(--text);
+            background-color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-header {
+            border-bottom: 1px solid #e7e9fc;
+            box-shadow: 0 1px 6px rgba(46, 47, 66, .08);
+        }
+
+        .header-container {
+            max-width: 1158px;
+            margin: 0 auto;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-logo {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+            color: var(--brand);
+            text-decoration: none;
+            padding: 24px 0;
+            display: inline-block;
+        }
+
+        .logo-part {
+            color: var(--navy);
+        }
+
+        .thanks-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 16px;
+            background: linear-gradient(135deg, #f4f4fd 0%, #ffffff 60%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thanks-section::before,
+        .thanks-section::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .thanks-section::before {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(77, 90, 229, .08) 0%, transparent 70%);
+            top: -150px;
+            right: -100px;
+        }
+
+        .thanks-section::after {
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(64, 75, 191, .07) 0%, transparent 70%);
+            bottom: -100px;
+            left: -80px;
+        }
+
+        .thanks-card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(46, 47, 66, .12), 0 2px 8px rgba(46, 47, 66, .06);
+            padding: 64px 48px;
+            max-width: 560px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: fadeUp .6s cubic-bezier(.4, 0, .2, 1) both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(32px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .check-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--brand);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            animation: popIn .5s .3s cubic-bezier(.4, 0, .2, 1) both;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(.5);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .thanks-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: .02em;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+
+        .thanks-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--text);
+            margin-bottom: 40px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 4px;
+            padding: 16px 32px;
+            min-width: 169px;
+            background: var(--brand);
+            color: var(--white);
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: .04em;
+            text-decoration: none;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+            transition: background-color 250ms cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .back-btn:hover {
+            background: var(--brand-dark);
+        }
+
+        .page-footer {
+            background: var(--navy);
+            padding: 24px 16px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        .footer-logo span {
+            color: #f4f4fd;
+        }
+
+        .footer-copy {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #8e8f99;
+        }
+
+        @media (max-width: 480px) {
+            .thanks-card {
+                padding: 40px 24px;
+            }
+
+            .thanks-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div class="header-container">
+            <a class="page-logo" href="./index.html">
+                Web<span class="logo-part">Studio</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="thanks-section">
+            <div class="thanks-card">
+                <div class="check-circle">
+                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 20.5L16.5 29L32 13" stroke="white" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                    </svg>
+                </div>
+                <h1 class="thanks-title">Thank you!</h1>
+                <p class="thanks-text">
+                    Your message has been received.<br />
+                    We will contact you shortly.
+                </p>
+                <a class="back-btn" href="./index.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 8H1M1 8L7 2M1 8L7 14" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                    </svg>
+                    Back to Home
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <a class="footer-logo" href="./index.html">Web<span>Studio</span></a>
+        <p class="footer-copy">© 2024 WebStudio. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

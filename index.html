@@ -32,10 +32,10 @@
               >
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-list-link" href="">Portfolio</a>
+              <a class="navigation-list-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-list-link" href="">Contacts</a>
+              <a class="navigation-list-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -370,7 +370,7 @@
         </div>
       </section> 
       <!--====== OUR PORTFOLIO====== -->
-       <section class="portfolio">
+       <section class="portfolio" id="portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -513,7 +513,7 @@
       </section> 
     </main>
     <!-- ======FOOTER====== -->
-     <footer class="page-footer">
+     <footer class="page-footer" id="contacts">
       <div class="container footer-main-container">
         <div class="footer-logo-cont">
           <a class="logo-footer" href="./index.html"
@@ -578,7 +578,10 @@
           <div class="footer-subscribe-wrapper">
         
           <p class="footer-subscribe-text" >Subscribe</p>
-          <form class="form-subscribe">
+          <form class="form-subscribe" action="https://formsubmit.co/novytska@seznam.cz" method="POST">
+            <input type="hidden" name="_next" value="https://novytska12321.github.io/goit-markup-hw-06/thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Нова підписка з WebStudio">
             <label class="footer-subscribe-label">
             <input class="footer-input" type="email" name="user-email-subscribe" id="user-email-subscribe" placeholder="E-mail"
               required />
@@ -616,7 +619,10 @@
         <p class="review-form-description">
           Leave your contacts and we will call you back
         </p>
-        <form class="review-form">
+        <form class="review-form" action="https://formsubmit.co/novytska@seznam.cz" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://novytska12321.github.io/goit-markup-hw-06//thanks.html">
+          <input type="hidden" name="_subject" value="Нова заявка з сайту WebStudio">
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-name">Name</label>
             <div class="review-form-input-wrapper">
@@ -641,7 +647,7 @@
             type="tel"
              name="user-phone"
               id="user-phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              pattern="[0-9\s\-\+\(\)]{7,20}"
               title="xxx-xxx-xx-xx"
               required
               />
@@ -711,11 +717,11 @@
 
             </li>
             <li class="mobile-menu-list-item">
-              <a class="mobile-menu-list-link" href="">Portfolio</a>
+              <a class="mobile-menu-list-link" href="#portfolio">Portfolio</a>
 
             </li>
             <li class="mobile-menu-list-item">
-              <a class="mobile-menu-list-link" href="">Contacts</a>
+              <a class="mobile-menu-list-link" href="#contacts">Contacts</a>
 
             </li>
           </ul>
@@ -759,5 +765,6 @@
       </div>
 
     </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>
